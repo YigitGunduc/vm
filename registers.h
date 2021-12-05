@@ -1,4 +1,7 @@
-enum
+#ifndef REGISTERS_H_
+#define REGISTERS_H_
+
+enum 
 {
     R_R0 = 0,
     R_R1,
@@ -8,7 +11,11 @@ enum
     R_R5,
     R_R6,
     R_R7,
-    R_ACC,
-    R_PC, /* program counter */
-    R_COUNT
+    R_ACC, /* accumulator */
+    R_IP, /* instruction pointer */
+    R_SP, /* stack pointer */
+    R_FP,
+    R_COUNT /* number of registers */
 };
+
+#endif // REGISTERS_H_
